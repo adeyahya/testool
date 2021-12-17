@@ -1,0 +1,12 @@
+{
+  "name": "@testool/chrome",
+  "version": "1.0.0",
+  "description": "testool chrome extension",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.14.5",
+    "eslint": "^8.4.1",
+    "typescript": "^4.5.4"
+  }
+}

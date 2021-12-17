@@ -1,0 +1,16 @@
+{
+  "name": "testool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "chrome-extension"
+    ]
+  },
+  "private": true,
+  "devDependencies": {
+    "turbo": "^1.0.16"
+  }
+}
