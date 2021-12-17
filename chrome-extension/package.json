@@ -4,9 +4,17 @@
   "description": "testool chrome extension",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "node script/build.js",
+    "dev": "node script/dev.js"
+  },
   "devDependencies": {
+    "@types/chrome": "^0.0.171",
     "esbuild": "^0.14.5",
     "eslint": "^8.4.1",
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "zbar.wasm": "^2.1.1"
   }
 }
