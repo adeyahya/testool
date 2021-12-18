@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entryPoints: ["background.ts", "content.ts"],
+  entryPoints: ["background.ts"],
   platform: "browser",
   bundle: true,
   external: ["path", "fs"],

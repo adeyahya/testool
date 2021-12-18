@@ -46,8 +46,16 @@ const clickHandler = async () => {
         const imageData = ctx.getImageData(0, 0, width, height);
         const res = await scanImageData(imageData);
         const strRes = res.map((r) => r.decode());
-        // @TODO: show popup
-        console.log(strRes);
+
+        chrome.scripting.executeScript({
+          target: { tabId: tabId as number },
+          func: (data) => {
+            data.forEach((item: string) => {
+              console.log(item);
+            });
+          },
+          args: [strRes as any] as any,
+        });
       }
     }
   );
