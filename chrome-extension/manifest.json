@@ -1,14 +1,15 @@
 {
-  "name": "Testool",
-  "description": "Companion app for QA",
+  "name": "Barcode Onscreen Scanner",
+  "description": "Scan any Barcode that appears on screen",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "dist/background.js"
   },
   "action": {
-    "default_title": "execute.js will run (watch the Chrome DevTools' console)"
+    "default_title": "Scan Screen"
   },
+  "icons": { "16": "16.png", "48": "48.png", "128": "128.png" },
   "permissions": ["tabs", "scripting", "activeTab"],
   "host_permissions": ["https://*/*", "http://*/*"]
 }

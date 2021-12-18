@@ -39,7 +39,7 @@ const clickHandler = async () => {
       if (result?.[0]?.result?.width) {
         const width = result[0].result.width;
         const height = result[0].result.height;
-        // @ts-ignore
+        // @ts-ignore OffscreenCanvas not recognized by typescript
         const canvas = new OffscreenCanvas(width, height);
         const ctx = canvas.getContext("2d");
         ctx.drawImage(image, 0, 0, width, height);
